@@ -7,10 +7,15 @@
 
     <constant name="struts.devMode" value="true" />
 
-    <package name="basicstruts2" extends="struts-default">
+    <package name="lojavirtual" extends="struts-default">
         <action name="index">
             <result>/index.jsp</result>
         </action>
+        
+        <action name="usuario" class="br.com.loja.virtual.action.UsuarioAction" method="teste">
+            <result name="success">/index.jsp</result>
+        </action>
+        
     </package>
 
 </struts>
